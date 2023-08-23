@@ -69,7 +69,7 @@ Now, open a new `MSY2 MSYS` terminal using the same method as before. Then, ente
 pacman -S --needed base-devel mingw-w64-x86_64-toolchain
 ```
 
-Press `Enter` to accept the default number of packages. 
+Press `Enter` to accept the default number of packages. **Note: pressing another key may cause `pacman` to install a different set of packages.**
 
 Note the `Total Installed Size` reported. Then enter `Y` to continue the installation. This may take some time.
 
