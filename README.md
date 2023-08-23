@@ -132,9 +132,10 @@ If this is the case, you're done! Continue to the next major section, "Creating 
 If this is not the case, follow these instructions from Microsoft to resolve the issue:
 
 1. Make sure your `PATH` variable entry matches the MinGW-w64 binary location where the toolchain was installed. If the compilers do not exist at that `PATH` entry, make sure you followed the previous instructions.
-2. If `gcc` has the correct output but not `gdb`, then you need to install the packages you are missing from the MinGW-w64 toolset.
-    - If on compilation you are getting the "The value of miDebuggerPath is invalid." message, one cause can be you are missing the `mingw-w64-gdb` package.
-3. If you had a previous version of MSYS2 or MinGW installed, make sure to run the package manager update commands in the "Installing MinGW" section above, then remove the older version of MinGW from your system `PATH` environment variable, similar to how it is added in the "Adding MinGW to your `PATH`" section.
+2. Try rerunning the command `pacman -S --needed base-devel mingw-w64-x86_64-toolchain`. Ensure you press `Enter` and no other key so all the packages are selected. If everything is okay, this should state that all packages are up to date (or similar). If not, missing packages will be installed.
+3. If `gcc` has the correct output but not `gdb`, then you need to install the packages you are missing from the MinGW-w64 toolset.
+    - If on compilation you are getting the "The value of miDebuggerPath is invalid." message, one cause can be that you are missing the `mingw-w64-gdb` package.
+4. If you had a previous version of MSYS2 or MinGW installed, make sure to run the package manager update commands in the "Installing MinGW" section above, then remove the older version of MinGW from your system `PATH` environment variable, similar to how it is added in the "Adding MinGW to your `PATH`" section.
 
 If this does not resolve your issue, ask your instructor for assistance.
 
