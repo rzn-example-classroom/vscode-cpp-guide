@@ -358,7 +358,8 @@ Now you're ready to start stepping through the code.
    ![image](https://github.com/rzn-example-classroom/vscode-cpp-guide/assets/16062019/53aa7186-3c3b-4d43-8198-7306ced76aa3)
 
 6. Press `F5` to start execution from the current line in the standard library header. Execution will break on `cout`. If you like, you can press `F9` again to toggle off the breakpoint.
-7. When the loop has completed, you can see the output in the Integrated Terminal, along with some other diagnostic information from the debugger. The output may vary by OS, but it should look similar to this:
+7. When the loop has completed, you can see the output in the Integrated Terminal, along with some other diagnostic information from the debugger. The output may vary by OS, but it should look similar to the image below.
+	- **Note the "Terminal" view is active. This will allow you to provide input to your program via `cin`, and is distinct from the "Debug Console" view.**
 
 ![image](https://github.com/rzn-example-classroom/vscode-cpp-guide/assets/16062019/74b92cec-f920-48e9-81f8-bb2e0c74a0a7)
 
