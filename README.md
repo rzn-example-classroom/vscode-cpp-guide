@@ -298,6 +298,7 @@ The C++ extension uses the C++ compiler and debugger installed on your machine t
 2. From the drop-down menu next to the "play" button in the top right corner of the editor, select `Run C/C++ File`. ![VS Code Run File](https://github.com/rzn-example-classroom/vscode-cpp-guide/assets/16062019/bb5a075f-6aaf-4b62-8f19-77b1ad340aaf)
 
 3. If prompted to select a compiler, select `g++` from the list of detected compilers.
+	- Be careful not to select the `gcc` or `clang` – you must use those suffixed with `++`, or your C++ code will most likely fail to compile.
 	- You'll only be asked to choose a compiler the first time you run `helloworld.cpp`. This compiler will be set as the "default" compiler in the `tasks.json` file.
   - **If you are on MacOS, select `clang++`**. On Mac, `g++` is set as an alias of `clang++`, which can be confusing and is not recommended for use. ![MacOS VSCode Debug](https://github.com/rzn-example-classroom/vscode-cpp-guide/assets/16062019/233cb101-54c4-452b-acff-6eef971e85fa)
 4. After the build succeeds, your program's output will appear in the integrated **Terminal**.
