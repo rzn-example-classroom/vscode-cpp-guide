@@ -295,10 +295,11 @@ If you are on MacOS or Linux, or the fix above did not work for you, ensure you 
 The C++ extension uses the C++ compiler and debugger installed on your machine to build and run your program, respectively. Ensure that you have properly installed `g++` and `gdb` (or `clang++`) before proceeding (see the subsection of "Installation" corresponding to your OS).
 
 1. Open `helloworld.cpp` so that it is the active file.
-2. From the drop-down menu next to the "play" button in the top right corner of the editor, select `Run C/C++ File`. ![VS Code Run File](https://github.com/rzn-example-classroom/vscode-cpp-guide/assets/16062019/bb5a075f-6aaf-4b62-8f19-77b1ad340aaf)
+2. From either the "Run" menu at the top of VSCode, run the program without debugging (or press `Ctrl+F5` / `Cmd+F5` on Mac). ![VSCode Run wo Debugging](https://github.com/rzn-example-classroom/vscode-cpp-guide/assets/16062019/d820fc80-39df-4a6e-924e-01c5ddf392a4)
 
 3. If prompted to select a compiler, select `g++` from the list of detected compilers.
-	- Be careful not to select the `gcc` or `clang` – you must use those suffixed with `++`, or your C++ code will most likely fail to compile.
+	- You may need to select the "GDB/LLVM" or "Clang" option before seeing the full list as in the image below.
+ 	- Be careful not to select the `gcc` or `clang` – you must use those suffixed with `++`, or your C++ code will most likely fail to compile.
 	- You'll only be asked to choose a compiler the first time you run `helloworld.cpp`. This compiler will be set as the "default" compiler in the `tasks.json` file.
   - **If you are on MacOS, select `clang++`**. On Mac, `g++` is set as an alias of `clang++`, which can be confusing and is not recommended for use. ![MacOS VSCode Debug](https://github.com/rzn-example-classroom/vscode-cpp-guide/assets/16062019/233cb101-54c4-452b-acff-6eef971e85fa)
 4. After the build succeeds, your program's output will appear in the integrated **Terminal**.
