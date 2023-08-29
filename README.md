@@ -331,6 +331,7 @@ Before you start stepping through the code, let's take a moment to notice severa
 - The Integrated Terminal appears at the bottom of the source code editor. In the **Debug Output** tab, you see output that indicates the debugger is up and running.
 - The editor highlights the line where you set a breakpoint before starting the debugger: ![VS Code Debugger](https://github.com/rzn-example-classroom/vscode-cpp-guide/assets/16062019/bfdd28de-837a-41f9-a5ab-9ddca7928299)
 
+- **Note the "Debug Console" view.** When a breakpoint is set, this allows you to perform in-depth debugging, like entering a variable name to see its current value. **However, you cannot enter program user input (via `cin`) from this panel – you must use the "Terminal" view.**
 - The **Run and Debug** view on the left shows debugging information. You'll see an example later in the tutorial.    
 - At the top of the code editor, a debugging control panel appears. You can move this around the screen by grabbing the dots on the left side.
 
