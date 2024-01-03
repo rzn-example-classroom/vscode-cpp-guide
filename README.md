@@ -63,7 +63,7 @@ user@desktop MSYS ~
 $ 
 ```
 
-Now, open a new `MSY2 MSYS` terminal using the same method as before. Then, enter the following command to install the MinGW toolchain, which includes GCC and GDB:
+Now, open a new `MSYS2 MSYS` terminal using the same method as before. Then, enter the following command to install the MinGW toolchain, which includes GCC and GDB:
 
 ```shell
 pacman -S --needed base-devel mingw-w64-x86_64-toolchain
